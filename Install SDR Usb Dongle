@@ -1,0 +1,49 @@
+Device: ASUS Tinker Board (2017)
+OS: 20171115-tinker-board-linaro-stretch-alip-v2.0.4
+Topic: How to install a generic SDR dongle
+
+When installing an SDR dongle on the Tinker Board for the first time it is best to start 
+with a clean install of TinkerOS. This will reduce the variables and simplify troubleshooting. 
+Not all versions of the SDR drivers work! Use these instructions for building the code:
+
+# Add usb device and audio playback support:
+sudo apt-get install libusb-1.0-0-dev
+sudo apt-get install sox
+
+# Add code building utilities:
+sudo apt-get install git
+sudo apt-get install cmake
+
+# Reboot the system:
+sudo reboot
+
+# Download SDR driver source code:
+git clone git://git.osmocom.org/rtl-sdr.git
+
+# Change to directory “rtl-sdr”:
+cd rtl-sdr/
+
+# Make a new directory called “build” and change to it:
+mkdir build
+cd build
+
+# Build the code:
+cmake ../ -DINSTALL_UDEV_RULES=ON
+make
+sudo make install
+
+# Update the system::
+sudo ldconfig
+
+# Copy the hardware settings file to the device manager folder:
+sudo cp ../rtl-sdr.rules /etc/udev/rules.d/
+
+# Reboot
+sudo reboot
+
+# Test SDR installation:
+rtl_test
+
+# Run a test scan and output to text file:
+rtl_power -f 24M:1700M:1M -i 100 -g 50 -e 24h data.csv
+

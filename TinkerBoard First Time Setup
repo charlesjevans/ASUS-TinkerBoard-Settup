@@ -29,12 +29,12 @@
 # If the TinkerBoard is connected to a TV (ex: LG WebOS TV) the desktop might get cut off around the edges. 
 In the TV’s settings disable overscan.
 
-Configure TinkerOS
-
+Configure TinkerOS Desktop
+# Goto: Network icon (lower right) and join your local wifi network
+# Or connect to a network via the built-in ethernet port
 # Home Icon > Preferences > Tinker Board Configuration
 # System: Set the tinker board’s name and the administrator’s  password.
 # Interfaces: Enable SSH and VNC and set the VNC password
-# Advanced: (nothing to change)
 # Localisation: Fill out local information
 
 # Update the OS: Home Icon > System Tools > LXTerminal

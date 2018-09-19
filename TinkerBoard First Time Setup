@@ -37,6 +37,9 @@ Configure TinkerOS
 # Advanced: (nothing to change)
 # Localisation: Fill out local information
 
+# Update the OS: Home Icon > System Tools > LXTerminal
+sudo apt-get update
+sudo apt-get upgrade
 
 # Code Installation Support
 sudo apt-get install git

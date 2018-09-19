@@ -51,13 +51,10 @@ sudo apt-get install python-pip python3-pip
 sudo apt-get install python-setuptools python3-setuptools
 sudo apt-get install python-wheel python3-wheel
 sudo apt-get install python-apt
-
 sudo apt-get install python-matplotlib
-sudo apt-get install python-dev
-sudo apt-get install python3-dev
 
 # Connect to Tinker Board from a Windows Computer:
-# Download and install VNC Viewer on the another computer.
+# Download and install VNC Viewer on another computer.
 # https://www.realvnc.com/en/connect/download/viewer/
 
 # Get the Tinker Board’s current IP address:

@@ -1,8 +1,9 @@
-TinkerOS Desktop
+How to Configure the TinkerOS Desktop:
+
 # Desktop > Home Icon (lower left) > Preferences > Tinker Board Configuration
-   # System: Set the tinker board’s name and the administrator’s password.
-   # Localisation: Fill out local information before connecting to WiFi network.
-   # Save and restart
+   System: Set the tinker board’s name and the administrator’s password.
+   Localisation: Fill out local information before connecting to WiFi network.
+   Save and restart
    
 # Connect to Local WiFi
 Desktop > Network icon (lower right) > join a local wifi network

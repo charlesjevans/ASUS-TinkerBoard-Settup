@@ -1,70 +1,21 @@
 
-# Download TinkerOS to a computer that has a micro sd card reader
-# Use version linaro-stretch-alip-v2.0.7.zip [1037MB] or newer
+# Download TinkerOS disk image to a computer that has a micro sd card reader
+# Use OS version: linaro-stretch-alip-v2.0.7.zip [1037MB] or newer
 # https://tinkerboarding.co.uk/wiki/index.php?title=Software#TinkerOS
-# Do not use the version distributed by the USA Asus TinkerBoard website!
 
-# Prepare a Bootable SD Card
 # Download and install the disk imaging utility Etcher: https://etcher.io/
 # Put a micro sd card into your card reader (32G)
 # Launch Etcher
-   # Select the TinkerOS disk image that you downloaded
+   # Select the TinkerOS .zip disk image that you downloaded
    # Select the target drive (the micro sd card you that you inserted)
-   # Select the “Flash!” button in Etcher to begin writing the disk image (takes about 5 minutes)
-   # Remove card when finished.
+   # Click the “Flash” icon in Etcher to begin writing the disk image (takes about 5 minutes)
+   # Remove card when finished
 
-
-# First Time Boot Up
-# Insert micro sd card into the Tinker Board memory slot.
-# Connect hdmi display, keyboard, mouse, ethernet
-# Connect power to the Tinker Board 
+# Insert micro sd card into the Tinker Board memory slot
+# Connect hdmi display, keyboard, mouse, ethernet.
+# Connect power supply to the Tinker Board.
 # Eventually the TinkerOS desktop will appear on the HDMI display.
 
-# Boot Up Problems
 # If the usb power supply is too low the board might shut down suddenly.
-# If the power stays on but nothing happens it means the sd card is not readable.
-# Download the TinkerOS disk image again, verify the name and version.
-
-#### Troubleshoot Display
-# If the TinkerBoard is connected to a TV (ex: LG WebOS TV) the desktop might get cut off around the edges. 
-In the TV’s settings disable overscan.
-
-Configure TinkerOS Desktop
-# Goto: Network icon (lower right) and join your local wifi network
-# Or connect to a network via the built-in ethernet port
-# Home Icon > Preferences > Tinker Board Configuration
-# System: Set the tinker board’s name and the administrator’s  password.
-# Interfaces: Enable SSH and VNC and set the VNC password
-# Localisation: Fill out local information
-
-# Update the OS: Home Icon > System Tools > LXTerminal
-sudo apt-get update
-sudo apt-get upgrade
-
-# Code Installation Support
-sudo apt-get install git
-sudo apt-get install cmake
-sudo apt-get install libboost-dev libboost-all-dev
-
-#### Support for Python
-sudo apt-get install python-pip python3-pip
-sudo apt-get install python-setuptools python3-setuptools
-sudo apt-get install python-wheel python3-wheel
-sudo apt-get install python-apt
-sudo apt-get install python-matplotlib
-
-# Connect to Tinker Board from a Windows Computer:
-# Download and install VNC Viewer on another computer.
-# https://www.realvnc.com/en/connect/download/viewer/
-
-# Get the Tinker Board’s current IP address:
-sudo ip address
-
-# Launch VNC Viewer Application on a Windows computer.
-# File > New Connection
-# Enter the Tinker Board’s current IP address (ex. 192.168.1.81)
-# Followed by a colon and the default port number 5901.
-# Example format: 192.168.1.1:5901
-# Double click on the connection icon
-# You should see a window open up with your Tinker Board’s desktop visible.
-
+# If the power stays on but nothing happens it means the sd card is not bootable.
+# If the desktop is cut off around the edges go to the TV's settings and disable overscan.

@@ -1,0 +1,25 @@
+TinkerOS Desktop
+# Desktop > Home Icon (lower left) > Preferences > Tinker Board Configuration
+   # System: Set the tinker board’s name and the administrator’s password.
+   # Localisation: Fill out local information before connecting to WiFi network.
+   # Save and restart
+   
+# Connect to Local WiFi
+Desktop > Network icon (lower right) > join a local wifi network
+
+# Update the OS in a terminal window:
+Desktop > Home Icon > System Tools > LXTerminal
+sudo apt-get update
+
+# Add Support for Installing New Code
+sudo apt-get install git
+sudo apt-get install cmake
+sudo apt-get install libboost-dev libboost-all-dev
+
+# Add Support for Python
+sudo apt-get install python-pip python3-pip
+sudo apt-get install python-setuptools python3-setuptools
+sudo apt-get install python-wheel python3-wheel
+sudo apt-get install python-apt
+sudo apt-get install python-matplotlib
+

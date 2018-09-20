@@ -1,0 +1,22 @@
+Topic: Install GNU Radio and the SDR block module for accessing the Usb SDR dongle
+Device: ASUS Tinker Board (2017)
+OS: 20171115-tinker-board-linaro-stretch-alip-v2.0.4
+
+# Install GNU Radio:
+sudo apt-get install gnuradio
+sudo apt-get install gnuradio-dev
+
+# Install SDR Module for GNU Radio:
+sudo apt-get install gr-osmosdr
+
+# Update the system’s list of installed code libraries:
+sudo ldconfig
+
+# Reboot the Tinker Board:
+sudo reboot
+
+# Now GNU Radio should be available as “GRC” at:
+Desktop > Home Icon > Programming > GRC 
+
+# In the GNU Radio application the SDR block is found in the modules menu under: 
+(no module specified) > Sources > RTL-SDR Source

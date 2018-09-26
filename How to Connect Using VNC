@@ -1,0 +1,17 @@
+How to Connect to a Tinker Board from a Windows Computer Using VNC:
+
+Install VNC Viewer on a Windows computer.
+https://www.realvnc.com/en/connect/download/viewer/
+
+Get TinkerBoard’s current IP address:
+Desktop > Home Icon > System > LXTerminal
+
+ip address
+
+In Windows computer launch VNC Viewer:
+  Go to: File > New Connection
+  Enter the TinkerBoard’s current IP address.
+  Followed by a colon and the default port number 5901
+  Example: 192.168.1.1:5901
+  Double click on the connection icon
+  You should see a window open up with your TinkerBoard’s desktop visible.
